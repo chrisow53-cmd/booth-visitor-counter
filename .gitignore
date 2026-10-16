@@ -1,0 +1,97 @@
+# ==============================================================================
+# Git Ignore for Computer Vision / Deep Learning Project (YOLO + TorchReID)
+# ==============================================================================
+
+# --- Model Weights and Checkpoints (Large Binary Files) ---
+*.pt
+*.pth
+*.pwf
+*.onnx
+*.engine
+*.tflite
+*.weights
+*.bin
+*.safetensors
+checkpoints/
+
+# --- Video & Media Files (Inputs and Outputs) ---
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+output/
+outputs/
+results/
+runs/
+
+# --- Datasets and Annotations ---
+datasets/
+data/cache/
+*.cache
+
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# --- IDEs and Text Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Operating System Artifacts ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- Secrets and Environment Variables ---
+.env
+.env.*
+!.env.example
+
+# --- Logs, Diagnostics & Experiment Tracking ---
+*.log
+logs/
+wandb/
+.pytest_cache/
+.coverage
+htmlcov/
+
